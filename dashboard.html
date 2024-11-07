@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Investasi Aplikasi</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fc;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #0073fe;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .navbar h1 {
+            margin: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product-card h3 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .product-card p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .price {
+            font-size: 16px;
+            color: #0073fe;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            background-color: #0073fe;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 30%;
+        }
+
+        .button-container button:hover {
+            background-color: #72cef8;
+        }
+
+        .buy-button {
+            background-color: #0073fe;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            font-size: 14px;
+            margin-top: 10px;
+            width: 50%;
+        }
+
+        .buy-button:hover {
+            background-color: #72cef8;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* Responsive design */
+        @media (max-width: 1024px) {
+            .product-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .product-list {
+                grid-template-columns: 1fr;
+            }
+
+            .button-container button {
+                width: 45%;
+            }
+
+            .buy-button {
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <h1>Investasi</h1>
+</div>
+
+<div class="container">
+    <h2>Investasi Saham Pertamina</h2>
+    <div class="product-list">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="pertalite.jpg" alt="Produk 1">
+            <h3>Pertalite</h3>
+            <p class="price">Harga: IDR 70,000</p>
+            <p>Masa Sewa: 15 Hari</p>
+            <p>Pendapatan Harian IDR 22,400</p>
+            <p>Total Pendapatan IDR 336,000</p>
+            <button class="buy-button" onclick="window.location.href='beli1.html'">Investasi Sekarang</button>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="pertamaxfile.PNG" alt="Produk 2">
+            <h3>Pertamax</h3>
+            <p class="price">Harga: IDR 220,000</p>
+            <p>Masa Sewa: 15 Hari</p>
+            <p>Pendapatan Harian IDR 72,600</p>
+            <p>Total Pendapatan IDR 1,089,000</p>
+            <button class="buy-button" onclick="window.location.href='beli2.html'">Investasi Sekarang</button>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="biosolarfile.PNG" alt="Produk 3">
+            <h3>Bio Solar</h3>
+            <p class="price">Harga: IDR 850,000</p>
+            <p>Masa Sewa: 15 Hari</p>
+            <p>Pendapatan Harian IDR 289,000</p>
+            <p>Total Pendapatan IDR 4,335,000</p>
+            <button class="buy-button" onclick="window.location.href='beli3.html'">Investasi Sekarang</button>
+        </div>
+        <!-- Product 4 -->
+        <div class="product-card">
+            <img src="biodexlitefile.JPG" alt="Produk 4">
+            <h3>Bio Dexlite</h3>
+            <p class="price">Harga: IDR 1,550,000</p>
+            <p>Masa Sewa: 30 Hari</p>
+            <p>Pendapatan Harian IDR 527,000</p>
+            <p>Total Pendapatan IDR 15,810,000</p>
+            <button class="buy-button" onclick="window.location.href='beli4.html'">Investasi Sekarang</button>
+        </div>
+        <!-- Product 5 -->
+        <div class="product-card">
+            <img src="avturfile.JPG" alt="Produk 5">
+            <h3>Avtur</h3>
+            <p class="price">Harga: IDR 2,550,000</p>
+            <p>Masa Sewa: 30 Hari</p>
+            <p>Pendapatan Harian IDR 892,500</p>
+            <p>Total Pendapatan IDR 26,775,000</p>
+            <button class="buy-button" onclick="window.location.href='beli5.html'">Investasi Sekarang</button>
+        </div>
+        <!-- Product 6 -->
+        <div class="product-card">
+            <img src="spbu11.JPG" alt="Produk 6">
+            <h3>SPBU Mini</h3>
+            <p class="price">Harga: IDR 5,550,000</p>
+            <p>Masa Sewa: 30 Hari</p>
+            <p>Pendapatan Harian IDR 1,998,000</p>
+            <p>Total Pendapatan IDR 59,940,000</p>
+            <button class="buy-button" onclick="window.location.href='beli6.html'">Investasi Sekarang</button>
+        </div>
+        <!-- Product 7 -->
+        <div class="product-card">
+            <img src="pertaminabesar.JPG" alt="Produk 7">
+            <h3>SPBU Konvensional</h3>
+            <p class="price">Harga: IDR 15,550,000</p>
+            <p>Masa Sewa: 30 Hari</p>
+            <p>Pendapatan Harian IDR 5,753,500</p>
+            <p>Total Pendapatan IDR 172,605,000</p>
+            <button class="buy-button" onclick="window.location.href='beli7.html'">Investasi Sekarang</button>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button onclick="window.location.href='dashboard.html'">Investasi</button>
+        <button onclick="window.location.href='hadiah.html'">Hadiah</button>
+        <button onclick="window.location.href='pusat-akun.html'">Pusat Akun</button>
+    </div

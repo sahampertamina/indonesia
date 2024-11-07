@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Deposit - Investasi Aplikasi</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        /* Resetting some basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #0073fe;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .navbar h1 {
+            font-size: 26px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h2 {
+            font-size: 24px;
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .input-container {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .input-container input {
+            width: 70%;
+            padding: 15px;
+            font-size: 18px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .input-container input:focus {
+            outline: none;
+            border-color: #0073fe;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .button-container a {
+            text-decoration: none;
+        }
+
+        .button-container button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #0073fe;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            width: 100%;
+            max-width: 300px; /* Set a max-width for the button */
+        }
+
+        .button-container button:hover {
+            background-color: #72cef8;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .button-container button:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <h1>Halaman Deposit</h1>
+</div>
+
+<div class="container">
+    <h2>Masukkan Jumlah Deposit</h2>
+
+    <form id="depositForm" action="qris.html" method="GET">
+        <div class="input-container">
+            <input type="number" id="depositAmount" name="amount" placeholder="Masukkan jumlah deposit" min="70000" required aria-label="Jumlah Deposit">
+        </div>
+
+        <div class="button-container">
+            <button type="submit">
+                <span class="material-icons">attach_money</span> Deposit Sekarang
+            </button>
+        </div>
+    </form>
+</div>
+
+<div class="footer">
+    <p>&copy; 2024 Investasi Aplikasi. Semua hak dilindungi.</p>
+</div>
+
+<script>
+    // Menambahkan validasi untuk jumlah deposit minimal Rp70.000
+    document.getElementById('depositForm').addEventListener('submit', function(e) {
+        var depositAmount = document.getElementById('depositAmount').value;
+        
+        // Validasi input
+        if (depositAmount < 70000 || depositAmount === "") {
+            alert("Jumlah deposit minimal adalah Rp 70.000.");
+            e.preventDefault(); 
+        }
+    });
+</script>
+
+</body>
+</html>

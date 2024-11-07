@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengaturan Akun - Investasi Aplikasi</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        /* Resetting some basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #0072fe;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .navbar h1 {
+            font-size: 26px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .form-group input:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 20px;
+            font-size: 16px;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s;
+            width: 48%;
+            text-decoration: none;
+        }
+
+        .button-save {
+            background-color: #0072f3;
+        }
+
+        .button-save:hover {
+            background-color: #72cef8;
+        }
+
+        .button-cancel {
+            background-color: #d9534f;
+        }
+
+        .button-cancel:hover {
+            background-color: #c9302c;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            .container h2 {
+                font-size: 20px;
+            }
+
+            .form-group input {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            .button {
+                padding: 10px 15px;
+                font-size: 14px;
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .button-container {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .button-cancel {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <h1>Pengaturan Akun</h1>
+</div>
+
+<div class="container">
+    <h2>Ubah Informasi Akun</h2>
+
+    <form action="update_account.html" method="POST">
+        <!-- Nama Lengkap -->
+        <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda" required>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+        </div>
+
+        <!-- Nomor Telepon -->
+        <div class="form-group">
+            <label for="telepon">Nomor Telepon</label>
+            <input type="tel" id="telepon" name="telepon" placeholder="Masukkan nomor telepon Anda" required>
+        </div>
+
+        <!-- Tombol Simpan dan Batal -->
+        <div class="button-container">
+            <button type="submit" class="button button-save">Simpan Perubahan</button>
+            <a href="pengaturan.html" class="button button-cancel">Batal</a>
+        </div>
+    </form>
+</div>
+
+<div class="footer">
+    <p>&copy; 2024 Investasi Aplikasi. Semua hak dilindungi.</p>
+</div>
+
+</body>
+</html>

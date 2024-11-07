@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusat Akun - Investasi Aplikasi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        /* Resetting some basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #0073fe;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .navbar h1 {
+            font-size: 26px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .account-info {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .account-info h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .account-info p {
+            font-size: 20px;
+            color: #555;
+        }
+
+        /* Layout for the buttons */
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Ensures uniform button size */
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        /* Styling for individual buttons */
+        .button-container a {
+            text-decoration: none;
+        }
+
+        .button-container button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #0073f3;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            width: 100%; /* Ensures the button stretches to fill its container */
+            text-align: center;
+            box-sizing: border-box; /* Ensures padding is accounted for in button size */
+        }
+
+        .button-container button:hover {
+            background-color: #72cef8;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .button-container button:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .button-container button span {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        /* Footer styling */
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        /* Responsive Layout for smaller screens */
+        @media (max-width: 768px) {
+            .button-container {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .button-container button {
+                font-size: 14px;
+                padding: 12px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <h1>Pusat Akun</h1>
+</div>
+
+<div class="container">
+    <!-- Informasi Akun -->
+    <div class="account-info">
+        <h2>Saldo Anda</h2>
+        <p>Rp 0</p>
+    </div>
+
+    <!-- Tombol-tombol Pusat Akun -->
+    <div class="button-container">
+        <!-- Tombol Deposit -->
+        <a href="deposit.html">
+            <button>
+                <span class="material-icons">attach_money</span> Deposit
+            </button>
+        </a>
+
+        <!-- Tombol Tarik -->
+        <a href="tarik.html">
+            <button>
+                <span class="material-icons">credit_card</span> Tarik
+            </button>
+        </a>
+
+        <!-- Tombol Riwayat Investasi -->
+        <a href="riwayatinvestasi.html">
+            <button>
+                <span class="material-icons">history</span> Riwayat Investasi
+            </button>
+        </a>
+
+        <!-- Tombol Pesan -->
+        <a href="https://t.me/sahamptpertamina" target="_blank">
+            <button>
+                <span class="material-icons">message</span> Bergabung Ke Grup Telegram
+            </button>
+        </a>
+
+        <!-- Tombol Bantuan -->
+        <a href="bantuan.html">
+            <button>
+                <span class="material-icons">help</span> Bantuan
+            </button>
+        </a>
+
+        <!-- Tombol Pengaturan -->
+        <a href="pengaturan.html">
+            <button>
+                <span class="material-icons">settings</span> Pengaturan
+            </button>
+        </a>
+    </div>
+</div>
+
+<div class="footer">
+    <p>&copy; 2024 Investasi Aplikasi. Semua hak dilindungi.</p>
+</div>
+
+</body>
+</html>

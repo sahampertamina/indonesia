@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengaturan Akun - Investasi Aplikasi</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        /* Resetting some basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #0073fe;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .navbar h1 {
+            font-size: 26px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .setting-option {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            transition: background-color 0.3s, transform 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .setting-option:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-5px); /* Menambahkan efek angkat */
+        }
+
+        .setting-option span.material-icons {
+            margin-right: 15px;
+            color: #0073fe;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            .container h2 {
+                font-size: 20px;
+            }
+
+            .setting-option {
+                padding: 12px;
+            }
+
+            .setting-option span.material-icons {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <h1>Pengaturan Akun</h1>
+</div>
+
+<div class="container">
+    <h2>Kelola Akun Anda</h2>
+
+    <!-- Pengaturan Profil -->
+    <a href="pengaturan-profil.html" class="setting-option">
+        <span class="material-icons">account_circle</span> Pengaturan Profil
+    </a>
+
+    <!-- Ubah Kata Sandi -->
+    <a href="ubah-kata-sandi.html" class="setting-option">
+        <span class="material-icons">lock</span> Ubah Kata Sandi
+    </a>
+
+    <!-- Pengaturan Keamanan -->
+    <a href="pengaturan-keamanan.html" class="setting-option">
+        <span class="material-icons">security</span> Pengaturan Keamanan
+    </a>
+
+    <!-- Keluar -->
+    <a href="logout.html" class="setting-option" style="color: #d9534f;">
+        <span class="material-icons">exit_to_app</span> Keluar
+    </a>
+</div>
+
+<div class="footer">
+    <p>&copy; 2024 Investasi Aplikasi. Semua hak dilindungi.</p>
+</div>
+
+</body>
+</html>
